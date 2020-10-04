@@ -8,36 +8,36 @@ import {
 const port = process.env.PORT || '8080';
 
 const names = [
-  'react-redux',
-  'redux-use-mutable-source',
-  'reactive-react-redux',
-  'react-tracked',
-  'constate',
-  'zustand',
-  'react-sweet-state',
-  'storeon',
-  'react-hooks-global-state',
-  'use-context-selector',
-  'use-enhanced-reducer',
-  'mobx-react-lite',
-  'use-subscription',
-  'mobx-use-sub',
-  'react-state',
-  'simplux',
-  'react-apollo',
-  'recoil',
-  'jotai',
-  'effector',
-  're-rxjs',
-  'rxdeep',
-  'rxjs-hooks',
-  'rx-store',
+  // 'react-redux',
+  // 'redux-use-mutable-source',
+  // 'reactive-react-redux',
+  // 'react-tracked',
+  // 'constate',
+  // 'zustand',
+  // 'react-sweet-state',
+  // 'storeon',
+  // 'react-hooks-global-state',
+  // 'use-context-selector',
+  // 'use-enhanced-reducer',
+  // 'mobx-react-lite',
+  // 'use-subscription',
+  // 'mobx-use-sub',
+  // 'react-state',
+  // 'simplux',
+  // 'react-apollo',
+  // 'recoil',
+  // 'jotai',
+  // 'effector',
+  // 're-rxjs',
+  // 'rxdeep',
+  // 'rxjs-hooks',
+  // 'rx-store',
   'react-graph-state',
-  'react-scoped-model',
+  // 'react-scoped-model',
 ];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-jest.setTimeout(15 * 1000);
+jest.setTimeout(30 * 1000);
 const REPEAT = 3;
 const NUM_COMPONENTS = NUM_CHILD_COMPONENTS + 1; // plus one in <Main>
 const TRANSITION_REPEAT_1 = 3;

@@ -1233,10 +1233,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@lxsmnsyc/react-graph-state@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@lxsmnsyc/react-graph-state/-/react-graph-state-0.1.6.tgz#bc452cde868768c1adc919d10083e15dfa98fc38"
-  integrity sha512-BcvenNieV3IzSgoCW9JUxo5tmXwgLzivj24I3XvhWeY3lbe1u0ndYCOgkefexrODLHapgTQ1tyAlnASjZ3zueQ==
+"@lxsmnsyc/react-graph-state@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@lxsmnsyc/react-graph-state/-/react-graph-state-0.2.0.tgz#4f70426a90819664f8ad781fc0fa0f78f5e070e7"
+  integrity sha512-irjOQ03ENTsGPUO8p+wm+aNfRWb6o+tDiyPv53sHpbBVhkutjCSuH23XMyAfLY76aIBa8XmiVrVjWlt9lLgU/A==
 
 "@lxsmnsyc/react-scoped-model@^1.5.2":
   version "1.5.2"

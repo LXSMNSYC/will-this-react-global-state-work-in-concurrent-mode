@@ -50,7 +50,7 @@
   "license": "MIT",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
-    "@lxsmnsyc/react-graph-state": "^0.1.6",
+    "@lxsmnsyc/react-graph-state": "^0.2.0",
     "@lxsmnsyc/react-scoped-model": "^1.5.2",
     "@rest-hooks/use-enhanced-reducer": "^1.0.5",
     "@rx-store/core": "^1.1.0",
