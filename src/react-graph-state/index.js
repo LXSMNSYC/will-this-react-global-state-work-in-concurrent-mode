@@ -20,7 +20,6 @@ const globalState = createGraphNode({
 });
 
 const countState = createGraphNode({
-  key: 'countState',
   get: ({ get }) => selectCount(get(globalState)),
   set: ({ get, set }, action) => {
     set(globalState, reducer(get(globalState), action));
