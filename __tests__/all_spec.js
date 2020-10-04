@@ -32,6 +32,8 @@ const names = [
   'rxdeep',
   'rxjs-hooks',
   'rx-store',
+  'react-graph-state',
+  'react-scoped-model',
 ];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

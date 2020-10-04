@@ -1233,6 +1233,16 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@lxsmnsyc/react-graph-state@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@lxsmnsyc/react-graph-state/-/react-graph-state-0.1.6.tgz#bc452cde868768c1adc919d10083e15dfa98fc38"
+  integrity sha512-BcvenNieV3IzSgoCW9JUxo5tmXwgLzivj24I3XvhWeY3lbe1u0ndYCOgkefexrODLHapgTQ1tyAlnASjZ3zueQ==
+
+"@lxsmnsyc/react-scoped-model@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@lxsmnsyc/react-scoped-model/-/react-scoped-model-1.5.2.tgz#b2e6444c48effd4757c443bd4da9844249b58e16"
+  integrity sha512-r1As0qoyIg27DBpbJdJr+DeA4glzTbs+6NoIFtt/DfiQY1GA668AuKLQsVLDdNT/H5jrUOo4ue17HsOkuCYiEQ==
+
 "@rest-hooks/use-enhanced-reducer@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@rest-hooks/use-enhanced-reducer/-/use-enhanced-reducer-1.0.5.tgz#2e641e4962d98e5b161bcc5d8f5a4989df8d8911"

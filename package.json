@@ -38,6 +38,8 @@
     "build:jotai": "cross-env NAME=jotai webpack",
     "build:effector": "cross-env NAME=effector webpack",
     "build:re-rxjs": "cross-env NAME=re-rxjs webpack",
+    "build:react-graph-state": "cross-env NAME=react-graph-state webpack",
+    "build:react-scoped-model": "cross-env NAME=react-scoped-model webpack",
     "build-all": "run-s build:*"
   },
   "keywords": [
@@ -48,6 +50,8 @@
   "license": "MIT",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
+    "@lxsmnsyc/react-graph-state": "^0.1.6",
+    "@lxsmnsyc/react-scoped-model": "^1.5.2",
     "@rest-hooks/use-enhanced-reducer": "^1.0.5",
     "@rx-store/core": "^1.1.0",
     "@rx-store/react": "^1.1.2",
