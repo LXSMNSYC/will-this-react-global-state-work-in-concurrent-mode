@@ -37,7 +37,9 @@ const useCount = () => {
 const useIncrement = () => {
   const dispatch = useSetRecoilState(countState);
   return useCallback(() => {
+    console.time('INCREMENT');
     dispatch(incrementAction);
+    console.timeEnd('INCREMENT');
   }, [dispatch]);
 };
 

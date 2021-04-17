@@ -1,4 +1,4 @@
-import { createReducerModel, useSelector } from '@lxsmnsyc/react-scoped-model';
+import { createReducerModel, createSelector, useSelector } from 'react-scoped-model';
 import React, { useCallback } from 'react';
 
 import {
@@ -12,7 +12,7 @@ import {
 
 const context = createReducerModel(reducer, initialState);
 
-const useCount = () => useSelector(context, (v) => selectCount(v[0]));
+const useCount = createSelector(context, (v) => selectCount(v[0]));
 
 const useIncrement = () => {
   const dispatch = useSelector(context, (v) => v[1]);

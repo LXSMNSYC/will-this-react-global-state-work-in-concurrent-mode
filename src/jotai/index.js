@@ -28,7 +28,9 @@ const useCount = () => {
 const useIncrement = () => {
   const dispatch = useUpdateAtom(countState);
   return useCallback(() => {
+    console.time('INCREMENT');
     dispatch(incrementAction);
+    console.timeEnd('INCREMENT');
   }, [dispatch]);
 };
 

@@ -1233,15 +1233,20 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@lxsmnsyc/react-graph-state@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@lxsmnsyc/react-graph-state/-/react-graph-state-0.2.0.tgz#4f70426a90819664f8ad781fc0fa0f78f5e070e7"
-  integrity sha512-irjOQ03ENTsGPUO8p+wm+aNfRWb6o+tDiyPv53sHpbBVhkutjCSuH23XMyAfLY76aIBa8XmiVrVjWlt9lLgU/A==
+"@lyonph/react-hooks@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@lyonph/react-hooks/-/react-hooks-0.2.1.tgz#f08eab2283160ed71d5d112451899645d6d368bc"
+  integrity sha512-2nOISFMxhEKVDQcOAUpf9/qPWkPUsXy71P6hrvt4iU2L4hl5kJgyY/pBe/I6yJfvQZzUp3b6/ONE2m0A7todbQ==
 
-"@lxsmnsyc/react-scoped-model@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@lxsmnsyc/react-scoped-model/-/react-scoped-model-1.5.2.tgz#b2e6444c48effd4757c443bd4da9844249b58e16"
-  integrity sha512-r1As0qoyIg27DBpbJdJr+DeA4glzTbs+6NoIFtt/DfiQY1GA668AuKLQsVLDdNT/H5jrUOo4ue17HsOkuCYiEQ==
+"@lyonph/react-hooks@^0.3.3", "@lyonph/react-hooks@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@lyonph/react-hooks/-/react-hooks-0.3.4.tgz#a6458e32b5e9e7d62c633488337ab4f58d770889"
+  integrity sha512-e94gIk9BP1nHchVQrWdSYR2DH9uYp2G2qK+rvZ5hNFDta8g8WttFRx+bT6Qm4aMlFAvbrnR7RWH6uIsVCg5exg==
+
+"@lyonph/react-hooks@^0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@lyonph/react-hooks/-/react-hooks-0.3.5.tgz#625dded79e6ac6c1a051d0f8eb4a64d427b57610"
+  integrity sha512-/6Scp7fo9zSNlUJ8ASvLbrx1FnlyhD2K5RImkiBLx6BCkNDSziZsY+9iRuHNuIZVZFbiCnxH8StpbO73WCmmmQ==
 
 "@rest-hooks/use-enhanced-reducer@^1.0.5":
   version "1.0.5"
@@ -4340,6 +4345,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.2.4
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.4.tgz#2256bde14d3632958c465ebc96dc467ca07a29fb"
   integrity sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
 
+graph-state@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/graph-state/-/graph-state-2.0.0.tgz#42abd214f27e0b1f7cf04b555af602b877105680"
+  integrity sha512-uqr9rO4A52B6xKRlal6Pv3gIJ+TvfjU2hFohetluqrSLSCRG7/do6I4/pcxJjQA7O0V7wHyipvIneRuisAYX2g==
+
 graphql-tag@^2.11.0, graphql-tag@^2.4.2:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.11.0.tgz#1deb53a01c46a7eb401d6cb59dec86fa1cccbffd"
@@ -5501,12 +5511,12 @@ jest@^26.4.2:
     import-local "^3.0.2"
     jest-cli "^26.4.2"
 
-jotai@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/jotai/-/jotai-0.8.1.tgz#95ef952423f689faaaee0dbf81319d5c70d962fc"
-  integrity sha512-cZ44RTRgOTm8UNgshnETDNSuJbKvFJwNYCWh74uSrbBzjsg5m1KEklTXb8NXgJjZz4QZp1CMo15LHj2omdXc9w==
+jotai@^0.11.3:
+  version "0.11.3"
+  resolved "https://registry.yarnpkg.com/jotai/-/jotai-0.11.3.tgz#6aec82bc3a5e998c458f42e43da029b7283afff4"
+  integrity sha512-9K+fwRgTK6tmixnLfS+W70O9DG+9LtfDolouQU2S5HZeMjiAOtqj/TxYCA2oyLUJShQQoLo9RAxKOeOf+nP+Ag==
   dependencies:
-    use-context-selector "1.2.5"
+    use-context-selector "1.3.2"
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -7016,14 +7026,30 @@ re-rxjs@^0.1.0:
   resolved "https://registry.yarnpkg.com/re-rxjs/-/re-rxjs-0.1.0.tgz#2bb74c717b4a036684047180c67f35af9465ea23"
   integrity sha512-0cLFD5rhsbtPw302Usb57oxELzMeZQNDivDLs5ymPrEoFbXSHD/+S0M0e+sm4H+VE6zfz8Ca5y06YlF1zkCOmw==
 
-react-dom@experimental:
-  version "0.0.0-experimental-94c0244ba"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-94c0244ba.tgz#1e715ca62608458058b99303d562ce77d3e699d8"
-  integrity sha512-rvyWGIxrtjImQaeo3/27ORpU5i7fTzPlQH/xkEI/wlLfuJ2zi7Tideln8y9xM2BA5mYA74sH103bMbIQbPWtGQ==
+react-dom@^0.0.0-experimental-5027eb465:
+  version "0.0.0-experimental-5027eb465"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-5027eb465.tgz#d16346a09acd4642a69ad4e599a82ebc5ab88198"
+  integrity sha512-0/U3oEMq8+KUpMdnZk0XsisdtvrMA6YEKgvHL4lZBgqrPG/UZ0/658HAviqZB7LWQ2Mm3WIzgLbs3El+pel4dw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.0.0-experimental-94c0244ba"
+    scheduler "0.0.0-experimental-5027eb465"
+
+react-external-subject@^0.3.1-alpha.3:
+  version "0.3.1-alpha.3"
+  resolved "https://registry.yarnpkg.com/react-external-subject/-/react-external-subject-0.3.1-alpha.3.tgz#a7c0afeb2b9da55dbd4a4bb593a3662ea6c1e603"
+  integrity sha512-FwnUf+jq0NCiy5/AKY/1Hjx/oUXEGv0YLJeh4lazKHGhaZcZhvWtQERDERUpnhcKZTWDGp/0r3eOWSNIdr8V3A==
+  dependencies:
+    "@lyonph/react-hooks" "^0.2.1"
+
+react-graph-state@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-graph-state/-/react-graph-state-2.0.0.tgz#c2ba45e1cc370ed99d38a700c5351f175fd00c70"
+  integrity sha512-FguPFMk7Fx3yogKT/Xzqt15VMEiLWfVp2F15eyamx2Jy3J9wLL8NuSJjs8/OhuB3/m4P5cAmXdhT0s5YWpk2NA==
+  dependencies:
+    "@lyonph/react-hooks" "^0.3.3"
+    react-scoped-model "^2.0.2"
+    react-store-adapter "^0.3.1"
 
 react-hooks-global-state@^1.0.1:
   version "1.0.1"
@@ -7046,6 +7072,21 @@ react-redux@^7.2.1:
     prop-types "^15.7.2"
     react-is "^16.9.0"
 
+react-scoped-model@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-scoped-model/-/react-scoped-model-2.0.2.tgz#286d1283efbd99be57eba8f11827204145bf46af"
+  integrity sha512-UBZ7qNue3A7RZvfAd4lviilJj1mEA33HEElLfxDoIH5jyNyTx7jVB2APmYG4lgQyMJ7sE5Ih6QTc3jC8My928w==
+  dependencies:
+    "@lyonph/react-hooks" "^0.3.5"
+
+react-store-adapter@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/react-store-adapter/-/react-store-adapter-0.3.1.tgz#55850baf83ea4d6e89cd5cd1b79e12c0c82ab8c6"
+  integrity sha512-P9l1lpaXJc8uFbYG11xHkxaZa3LCWCVKLsGn/jTmCnt9E3a6JhyIU3irDCP3b6bGS3V8orwE3AtOktyLEDZ+fg==
+  dependencies:
+    "@lyonph/react-hooks" "^0.3.4"
+    react-scoped-model "^2.0.2"
+
 react-sweet-state@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/react-sweet-state/-/react-sweet-state-2.3.1.tgz#0effa906c324ffb781241151d85fbff62508642a"
@@ -7056,10 +7097,10 @@ react-tracked@^1.4.2:
   resolved "https://registry.yarnpkg.com/react-tracked/-/react-tracked-1.4.2.tgz#ff5940ab367a18da285729865465842cb927a9bf"
   integrity sha512-Rjc8tdXPP6peuyph2wTBAQVm/7K0EH1uEmxcWCF072o9Z42mI72YZtTY0KnUB6iT6xEBM/ri35GzhgC/pxNTRg==
 
-react@experimental:
-  version "0.0.0-experimental-94c0244ba"
-  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-94c0244ba.tgz#eb63ece3eadcf231845b6ec9c4a8c1829ddcc1fe"
-  integrity sha512-67fLM+CA1w96JM0Ju5dv9lE3q1qSxVAi1iAOOyhXddhQJfs85bAJNM+gEMPBKbrhbhJGyHL1mLh1xqpOzokQ4w==
+react@^0.0.0-experimental-5027eb465:
+  version "0.0.0-experimental-5027eb465"
+  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-5027eb465.tgz#6ba3d3cbd8a57daed8ddf0028fc73069e48029db"
+  integrity sha512-i2sU/G8n2GgcX30HMys88mBQSd+09nrgcHpkv8JK3CW4lkgcRy79eT236FyGEbAMD8zNyEDDR5AvLBWivKZ6Rg==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -7152,10 +7193,10 @@ readdirp@~3.4.0:
   dependencies:
     picomatch "^2.2.1"
 
-recoil@^0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.0.13.tgz#23e6d63135c07d8defbd91aaa35dca94ec5c15a6"
-  integrity sha512-2OToaQ8GR//KsdKdaEhMi04QKStLGRpk3qjC58iBpZpUtsByZ4dUy2UJtRcYuhnVlltGZ8HNwcEQRdFOS864SQ==
+recoil@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.1.2.tgz#844c612f535826dbe54c977761a67ded16f6d063"
+  integrity sha512-hIRrHlkmW4yITlBFprVYjVPhzPKYrJKoaDrrJtAtbkMeXfXaa/XE5OlyR10n+rNfnKWNToCKb3Z4fo86IGjkzg==
 
 redux@>=4.0.0, redux@^4.0.5:
   version "4.0.5"
@@ -7501,10 +7542,18 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@0.0.0-experimental-94c0244ba:
-  version "0.0.0-experimental-94c0244ba"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-94c0244ba.tgz#0144f590f76a951111fe9f93ccaac7e5b674d04a"
-  integrity sha512-F+eZM/SpbZj8Ugh7AU5dWydx/iwJwI91PGAEEtc01cvO28ojXaxEjBqUscKNNNJM0xUumoFmmDmEOfAr/wKyoA==
+scheduler@0.0.0-experimental-5027eb465:
+  version "0.0.0-experimental-5027eb465"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-5027eb465.tgz#61046feedb8a5bd17458da24bcfd1c7679b73faf"
+  integrity sha512-4bHbnorhOexhqiHqEu8J4om7kNstJSXEccA3NNH/QQ532uGR3r4aCKadhYn8hhSPEwKwFpAGHHW0DWRZJ6DaoQ==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@^0.20.1:
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.20.1.tgz#da0b907e24026b01181ecbc75efdc7f27b5a000c"
+  integrity sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -8561,7 +8610,12 @@ use-constant@^1.0.0:
   resolved "https://registry.yarnpkg.com/use-constant/-/use-constant-1.0.0.tgz#cfab998e6fc19ddc62b056875709f1420e339a10"
   integrity sha512-HmVrMl3+1tEr64ace4UtP5WTdnLyrvYKwF54JVf7B7lSB76JSERDvvgWkaaxlOM3S0dSl1U3WH1l9PupNnzsvQ==
 
-use-context-selector@1.2.5, use-context-selector@^1.2.5:
+use-context-selector@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/use-context-selector/-/use-context-selector-1.3.2.tgz#326a76875be2914c2d5cabf63349cbd9fda09d34"
+  integrity sha512-XRRlZD8+FIac3RtmOEqq8SizNEQI6oldteuOWu+F+pDooiJPPaFgw+8wckX+/fuJ80DRJB9HP99UdIq8A1YSMA==
+
+use-context-selector@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/use-context-selector/-/use-context-selector-1.2.5.tgz#40f84a9625508e89e4bb819aae2a9f04769ecfab"
   integrity sha512-Xh1wpqbtzQEBTLblWQjvvBHW2BPKDrexBDh0WsIWtJRqgM/5uBfmRnmt2nMQUYWlTQdMMsLeAwjrQ+zL8ZWabg==

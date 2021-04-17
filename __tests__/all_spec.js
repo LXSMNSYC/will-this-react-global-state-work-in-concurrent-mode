@@ -20,7 +20,6 @@ const names = [
   // 'use-context-selector',
   // 'use-enhanced-reducer',
   // 'mobx-react-lite',
-  // 'use-subscription',
   // 'mobx-use-sub',
   // 'react-state',
   // 'simplux',
@@ -32,8 +31,12 @@ const names = [
   // 'rxdeep',
   // 'rxjs-hooks',
   // 'rx-store',
-  'react-graph-state',
-  // 'react-scoped-model',
+  // 'react-graph-state',
+  'react-scoped-model',
+  // 'use-subscription',
+  // 'react-external-subject',
+  // 'react-external-subject-proto',
+  // 'react-store-adapter',
 ];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
