@@ -18,8 +18,8 @@ const names = [
   // 'storeon',
   // 'react-hooks-global-state',
   // 'use-context-selector',
-  // 'use-enhanced-reducer',
   // 'mobx-react-lite',
+  // 'use-subscription',
   // 'mobx-use-sub',
   // 'react-state',
   // 'simplux',
@@ -27,15 +27,15 @@ const names = [
   // 'recoil',
   // 'jotai',
   // 'effector',
-  // 're-rxjs',
+  // 'react-rxjs',
   // 'rxdeep',
   // 'rxjs-hooks',
   // 'rx-store',
-  // 'react-graph-state',
-  'react-scoped-model',
-  // 'use-subscription',
-  // 'react-external-subject',
-  // 'react-external-subject-proto',
+  // 'klyva',
+  // 'valtio',
+  // 'react-tagged-state',
+  'react-graph-state',
+  // 'react-scoped-model',
   // 'react-store-adapter',
 ];
 
@@ -146,21 +146,26 @@ names.forEach((name) => {
         // wait for pending
         await expect(page).toMatchElement('#pending', {
           text: 'Pending...',
-          timeout: 5 * 1000,
+          timeout: 2 * 1000,
         });
+        await sleep(1000); // this is a magic number (better way?)
+        // wait until pending disappers
+        await expect(page).toMatchElement('#pending', {
+          text: '',
+          timeout: 10 * 1000,
+        });
+        // the first one should be changed
+        await expect(page.evaluate(() => document.querySelector('.count:first-of-type').innerHTML)).resolves.not.toBe('0');
+      });
+
+      it('check 6: no tearing with transition', async () => {
         // check if all counts become button clicks / 2
         await Promise.all([...Array(NUM_COMPONENTS).keys()].map(async (i) => {
           await expect(page).toMatchElement(`.count:nth-of-type(${i + 1})`, {
             text: `${TRANSITION_REPEAT_1}`,
-            timeout: 10 * 1000,
+            timeout: 5 * 1000,
           });
         }));
-        // check if pending is clear
-        await sleep(2000); // to make it stable
-        await expect(page.evaluate(() => document.getElementById('pending').innerHTML)).resolves.not.toBe('Pending...');
-      });
-
-      it('check 6: no tearing with transition', async () => {
         // check if there's inconsistency during update
         // see useCheckTearing() in src/common.js
         await expect(page.title()).resolves.not.toMatch(/TEARED/);
